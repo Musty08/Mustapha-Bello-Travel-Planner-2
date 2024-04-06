@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Planner</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Travel Planner</h1>
+    </div>
+</header>
+<div class="container">
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <ul id="destinationList">
+            <!-- Destinations will be displayed here -->
+        </ul>
+        <form id="addDestinationForm" onsubmit="addDestination(event)">
+            <input type="text" id="destinationInput" placeholder="Enter destination">
+            <button type="submit">Add Destination</button>
+        </form>
+    </section>
+    <section id="activities">
+        <h2>Activities</h2>
+        <ul id="activityList">
+            <!-- Activities will be displayed here -->
+        </ul>
+        <form id="addActivityForm" onsubmit="addActivity(event)">
+            <input type="text" id="activityInput" placeholder="Enter activity">
+            <button type="submit">Add Activity</button>
+        </form>
+    </section>
+    <section id="notes">
+        <h2>Notes</h2>
+        <textarea id="notesInput" placeholder="Enter notes"></textarea>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
